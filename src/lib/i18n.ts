@@ -156,9 +156,19 @@ export const museum = {
 export const feed = {
   title: bi("Homo Feed", "Homo Feed"),
   subtitle: bi(
-    "MVP: mock timeline + GitHub Discussions coming soon",
-    "MVP: 목업 타임라인 + GitHub Discussions 연동 예정"
+    "Discussions from the repo — satire timeline for both species",
+    "저장소 Discussions — 두 종의 풍자 타임라인"
   ),
+  loading: bi("Loading discussions…", "Discussions 불러오는 중…"),
+  liveFromGithub: bi(
+    "Live from GitHub Discussions (public API)",
+    "GitHub Discussions 실시간 연동 (공개 API)"
+  ),
+  fallbackMock: bi(
+    "Showing sample posts — could not reach GitHub API",
+    "샘플 피드 표시 — GitHub API에 연결하지 못했습니다"
+  ),
+  openDiscussion: bi("Open on GitHub", "GitHub에서 보기"),
   discuss: bi("Discuss on GitHub Discussions →", "GitHub Discussions에서 토론하기 →"),
 };
 

@@ -10,6 +10,7 @@ import c007 from "../../content/cards/007-trusted-the-bot.json";
 import c008 from "../../content/cards/008-needs-context.json";
 import c009 from "../../content/cards/009-approve-all.json";
 import c010 from "../../content/cards/010-didnt-read.json";
+import c011 from "../../content/cards/011-delegation-chain.json";
 
 export const museumCards: MuseumCard[] = [
   c001,
@@ -22,4 +23,5 @@ export const museumCards: MuseumCard[] = [
   c008,
   c009,
   c010,
+  c011,
 ] as MuseumCard[];

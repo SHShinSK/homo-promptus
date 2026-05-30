@@ -1,0 +1,26 @@
+{
+  "id": "meeting-one-liner",
+  "match": "oneLine",
+  "promptus": {
+    "opinion": {
+      "en": "A meeting summary without attendees, decisions, and owners is a rumor with bullet points.",
+      "ko": "참석자·결정·담당 없는 회의 요약은 글머리 기호가 달린 소문입니다."
+    },
+    "reaction": {
+      "en": "Asks who owns action item #2 before accepting the summary.",
+      "ko": "요약을 받아들이기 전에 액션 #2 담당자를 묻습니다."
+    },
+    "tags": ["needs-context"]
+  },
+  "delegans": {
+    "opinion": {
+      "en": "Three bullets read well — ship the recap.",
+      "ko": "세 줄이 깔끔합니다 — 회의록 배포하죠."
+    },
+    "reaction": {
+      "en": "Posts the summary to the channel and tags @channel.",
+      "ko": "요약을 채널에 올리고 @channel을 멘션합니다."
+    },
+    "tags": ["trusted-the-bot", "didnt-read"]
+  }
+}

@@ -7,9 +7,10 @@ import type { PlayInput } from "./mockAi";
 
 import empty from "../../content/ai-opinions/empty.json";
 import oneLine from "../../content/ai-opinions/one-line.json";
+import meeting from "../../content/ai-opinions/meeting.json";
 import fullContext from "../../content/ai-opinions/full-context.json";
 
-const templates = [empty, oneLine, fullContext] as OpinionTemplate[];
+const templates = [empty, oneLine, meeting, fullContext] as OpinionTemplate[];
 
 const fallback: OpinionTemplate = {
   id: "fallback",
@@ -51,7 +52,9 @@ export function getAiOpinionsForBoth(input: PlayInput): {
   delegans: AiSpeciesResponse;
 } {
   const tier = classifyInput(input);
-  const t = templates.find((x) => x.match === tier) ?? fallback;
+  const tierTemplates = templates.filter((x) => x.match === tier);
+  const t =
+    tierTemplates[Math.floor(Math.random() * tierTemplates.length)] ?? fallback;
   return {
     promptus: { species: "promptus", ...t.promptus },
     delegans: { species: "delegans", ...t.delegans },

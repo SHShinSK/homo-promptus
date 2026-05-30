@@ -27,9 +27,10 @@
 
 **Fastest contributions (≈15 min)**
 
-1. **Museum card** — add `content/cards/011-your-slug.json` ([schema](docs/card-schema.md)) · [call thread #2](https://github.com/SHShinSK/homo-promptus/discussions/2)
-2. **Satire line** — propose EN+KO copy in [Discussion #3](https://github.com/SHShinSK/homo-promptus/discussions/3) or `src/lib/i18n.ts`
-3. **Fix typo / i18n** — pick a [good first issue](https://github.com/SHShinSK/homo-promptus/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
+1. **Museum card** — add `content/cards/012-your-slug.json` ([schema](docs/card-schema.md)) · [call thread #2](https://github.com/SHShinSK/homo-promptus/discussions/2) · example: `011-delegation-chain.json`
+2. **AI Reactions** — add `content/ai-opinions/*.json` ([template](https://github.com/SHShinSK/homo-promptus/issues/7)) · try **[`/reactions`](https://shshinsk.github.io/homo-promptus/#/reactions)** on the demo
+3. **Satire line** — propose EN+KO copy in [Discussion #3](https://github.com/SHShinSK/homo-promptus/discussions/3) or `src/lib/i18n.ts`
+4. **Fix typo / i18n** — pick a [good first issue](https://github.com/SHShinSK/homo-promptus/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
 
 **Code of conduct:** [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) — satire targets **habits & UX**, not people. No “Delegans = stupid” framing.
 

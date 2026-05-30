@@ -1,0 +1,16 @@
+{
+  "id": "011-delegation-chain",
+  "species": "delegans",
+  "title": {
+    "en": "Meeting notes → agent → summary → approve",
+    "ko": "회의록 → 에이전트 → 요약 → 승인"
+  },
+  "body": {
+    "en": "Forty minutes of debate became three bullets. Nobody checked who wrote bullet two. The agent sounded confident, so the thread closed with a thumbs-up.",
+    "ko": "사십 분 토론이 세 줄 요약이 됐다. 두 번째 줄을 누가 썼는지 확인한 사람은 없었다. 에이전트가 자신 있게 말해서 스레드는 👍로 닫혔다."
+  },
+  "tags": ["meeting", "agents", "collab"],
+  "locale": "en",
+  "author": "SHShinSK",
+  "created": "2026-05-31"
+}

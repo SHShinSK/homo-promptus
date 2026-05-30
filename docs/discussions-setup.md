@@ -32,6 +32,8 @@ Create these in **Set up discussions** (or edit after enable):
 
 **Posted (2026-05-30):** [#1 Welcome](https://github.com/SHShinSK/homo-promptus/discussions/1) · [#2 Museum](https://github.com/SHShinSK/homo-promptus/discussions/2) · [#3 Satire & Copy](https://github.com/SHShinSK/homo-promptus/discussions/3) — see [discussions-posted.json](discussions-posted.json)
 
+**Update (2026-05-31):** A maintainer comment on [#1](https://github.com/SHShinSK/homo-promptus/discussions/1) announces live **`/reactions`** on the demo. Pin + **Governance** category still require the steps below (GitHub API cannot pin or create categories with current token scopes).
+
 To pin #1 manually:
 
 After posting [01-welcome-vision.md](discussions/01-welcome-vision.md) under **Ideas** (or General if you keep it):
