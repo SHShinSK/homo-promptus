@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Bi } from "@/components/Bi";
 import { SpeciesBadge } from "@/components/SpeciesBadge";
 import { useCopy, useSpecies } from "@/context/SpeciesContext";
-import { common, copy, home } from "@/lib/i18n";
+import { common, copy, home, reactions } from "@/lib/i18n";
 
 export function Home() {
   const { diagnosis } = useSpecies();
@@ -40,6 +40,12 @@ export function Home() {
             className="species-accent-outline px-4 py-2 rounded-lg no-underline font-medium"
           >
             {home.tryPlay.en} {c.playTitle.en} · {home.tryPlay.ko} {c.playTitle.ko}
+          </Link>
+          <Link
+            to="/reactions"
+            className="species-accent-outline px-4 py-2 rounded-lg no-underline font-medium"
+          >
+            <Bi text={reactions.title} variant="block" />
           </Link>
         </div>
       </section>

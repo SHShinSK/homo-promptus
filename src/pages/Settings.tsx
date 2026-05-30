@@ -2,16 +2,21 @@ import { useState } from "react";
 import { Bi } from "@/components/Bi";
 import { useSpecies } from "@/context/SpeciesContext";
 import { common, settings as s } from "@/lib/i18n";
-import { getNickname, setNickname } from "@/lib/storage";
+import { getAiKey, getNickname, setAiKey, setNickname } from "@/lib/storage";
 import type { Species } from "@/lib/types";
 
 export function Settings() {
   const { species, setSpecies: setSpeciesCtx, refreshStats } = useSpecies();
   const [nick, setNick] = useState(getNickname);
+  const [aiKey, setAiKeyState] = useState(getAiKey);
 
   function saveNick() {
     setNickname(nick);
     refreshStats();
+  }
+
+  function saveAiKey() {
+    setAiKey(aiKey);
   }
 
   function pickMode(mode: Species) {
@@ -67,6 +72,33 @@ export function Settings() {
             Delegans
           </button>
         </div>
+      </div>
+
+      <div>
+        <Bi text={s.aiTitle} variant="label" className="mb-1" />
+        <label className="flex items-center gap-2 text-sm mb-2">
+          <input type="checkbox" checked readOnly />
+          <Bi text={s.aiMockOnly} variant="inline" />
+        </label>
+        <Bi text={s.aiKeyLabel} variant="label" className="mb-1" />
+        <div className="flex gap-2">
+          <input
+            type="password"
+            className="flex-1 rounded-lg border p-2"
+            value={aiKey}
+            onChange={(e) => setAiKeyState(e.target.value)}
+            placeholder="sk-…"
+            autoComplete="off"
+          />
+          <button
+            type="button"
+            className="species-accent px-3 py-2 rounded-lg border-0 cursor-pointer text-white"
+            onClick={saveAiKey}
+          >
+            <Bi text={common.save} variant="block" />
+          </button>
+        </div>
+        <Bi text={s.aiKeyHint} variant="block" className="text-xs species-muted mt-2" />
       </div>
     </div>
   );

@@ -20,6 +20,15 @@
 - [x] GitHub Pages workflow
 - [ ] 실제 GitHub Discussions API 연동 (repo URL 설정 후)
 
+## Phase 1.5 — AI Reactions (mock)
+
+- [x] `/reactions` 페이지: 한 요청 → 두 종에 대한 AI 의견·반응
+- [x] 시나리오 프리셋 칩 + 가드레일 부제 (요청·습관에 반응, 사람 평가 아님)
+- [x] `content/ai-opinions/*.json` 템플릿 (PR 기여 단위)
+- [x] Play → Reactions 입력 전달
+- [x] Settings BYOK UI 스텁 (정적 데모 비활성)
+- [ ] AI opinion 템플릿 추가 (good first issue)
+
 ## Phase 2 — 선택적 확장
 
 - [ ] 자체 Feed 백엔드

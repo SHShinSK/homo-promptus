@@ -21,3 +21,7 @@ Promptus UI는 차분하고 문서형. Delegans는 과장된 CTA와 패러디 �
 ## 5. 접근성
 
 모드 전환은 키보드·스크린리더에서도 명확한 라벨 제공.
+
+## 6. AI는 두 종의 거울 / AI as a mirror
+
+`/reactions`는 같은 요청에 대해 AI가 Promptus·Delegans 각각에게 어떻게 의견을 내고 반응하는지를 **나란히** 보여 준다. 핵심은 **AI가 사람을 평가하는 것이 아니라, 요청·습관에 반응**한다는 점이다. 의견 템플릿은 `content/ai-opinions/*.json`으로 분리해 누구나 PR로 기여할 수 있다.

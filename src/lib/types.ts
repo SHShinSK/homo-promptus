@@ -28,3 +28,25 @@ export interface BehaviorLog {
   delegansActions: number;
   lastUpdated: string;
 }
+
+export type ReactionTag =
+  | "verified"
+  | "needs-context"
+  | "trusted-the-bot"
+  | "didnt-read";
+
+export type InputTier = "empty" | "oneLine" | "fullContext";
+
+export interface AiSpeciesResponse {
+  species: Species;
+  opinion: Bi;
+  reaction: Bi;
+  tags?: ReactionTag[];
+}
+
+export interface OpinionTemplate {
+  id: string;
+  match: InputTier;
+  promptus: { opinion: Bi; reaction: Bi; tags?: ReactionTag[] };
+  delegans: { opinion: Bi; reaction: Bi; tags?: ReactionTag[] };
+}

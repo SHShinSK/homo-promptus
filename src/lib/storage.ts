@@ -7,7 +7,16 @@ const KEYS = {
   behavior: "homo_behavior",
   tracking: "homo_tracking_optin",
   nickname: "homo_nickname",
+  aiKey: "homo_ai_key",
 } as const;
+
+export function getAiKey(): string {
+  return localStorage.getItem(KEYS.aiKey) || "";
+}
+
+export function setAiKey(key: string): void {
+  localStorage.setItem(KEYS.aiKey, key.trim());
+}
 
 export function getSpecies(): Species {
   const v = localStorage.getItem(KEYS.species);

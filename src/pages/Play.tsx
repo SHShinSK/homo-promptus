@@ -1,8 +1,10 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Bi } from "@/components/Bi";
 import { useCopy, useSpecies } from "@/context/SpeciesContext";
-import { play as p } from "@/lib/i18n";
+import { play as p, reactions as r } from "@/lib/i18n";
 import { mockRespond } from "@/lib/mockAi";
+import { stashPlayInput } from "@/lib/playInputBridge";
 import { recordAction } from "@/lib/storage";
 
 const promptFields = [
@@ -109,15 +111,27 @@ export function Play() {
       </button>
 
       {output && (
-        <pre className="species-surface rounded-xl p-4 whitespace-pre-wrap text-sm m-0">
-          <strong>
-            {c.resultTitle.en}
-            {"\n"}
-            {c.resultTitle.ko}
-          </strong>
-          {"\n\n"}
-          {output}
-        </pre>
+        <>
+          <pre className="species-surface rounded-xl p-4 whitespace-pre-wrap text-sm m-0">
+            <strong>
+              {c.resultTitle.en}
+              {"\n"}
+              {c.resultTitle.ko}
+            </strong>
+            {"\n\n"}
+            {output}
+          </pre>
+          <Link
+            to="/reactions"
+            onClick={() =>
+              stashPlayInput({ purpose, context, constraint, verify, oneLiner })
+            }
+            className="inline-block no-underline text-sm font-medium"
+            style={{ color: "var(--color-accent)" }}
+          >
+            <Bi text={r.fromPlay} variant="inline" />
+          </Link>
+        </>
       )}
     </div>
   );

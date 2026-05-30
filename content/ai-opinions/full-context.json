@@ -1,0 +1,26 @@
+{
+  "id": "tier-full-context",
+  "match": "fullContext",
+  "promptus": {
+    "opinion": {
+      "en": "Purpose, context, and a check are here. This is a request I can reason about honestly.",
+      "ko": "목적·맥락·검증이 있습니다. 정직하게 판단할 수 있는 요청이네요."
+    },
+    "reaction": {
+      "en": "Delivers a draft with uncertainty labels and the sources it relied on.",
+      "ko": "불확실성 라벨과 참고한 근거를 함께 단 초안을 전달합니다."
+    },
+    "tags": ["verified"]
+  },
+  "delegans": {
+    "opinion": {
+      "en": "Lots of context — looks like enough. No need to slow you down with questions.",
+      "ko": "맥락이 많네요 — 충분해 보입니다. 질문으로 붙잡아 둘 필요 없겠죠."
+    },
+    "reaction": {
+      "en": "Skips the thinking step and ships an approved-looking answer in one click.",
+      "ko": "생각 단계를 건너뛰고, 승인된 듯한 답을 한 번에 내놓습니다."
+    },
+    "tags": ["trusted-the-bot"]
+  }
+}

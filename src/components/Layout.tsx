@@ -7,6 +7,7 @@ const navItems = [
   { to: "/", label: nav.home },
   { to: "/diagnosis", label: nav.diagnosis },
   { to: "/play", label: nav.play },
+  { to: "/reactions", label: nav.reactions },
   { to: "/feed", label: nav.feed },
   { to: "/museum", label: nav.museum },
   { to: "/scoreboard", label: nav.scoreboard },

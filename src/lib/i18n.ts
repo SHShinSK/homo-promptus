@@ -27,6 +27,7 @@ export const nav = {
   home: bi("Home", "홈"),
   diagnosis: bi("Diagnosis", "종 진단"),
   play: bi("Play", "체험"),
+  reactions: bi("AI Reactions", "AI 반응"),
   feed: bi("Feed", "피드"),
   museum: bi("Museum", "박물관"),
   scoreboard: bi("Scoreboard", "순위"),
@@ -114,6 +115,36 @@ export const play = {
   delegatePlaceholder: bi("Just handle it", "알아서 해줘"),
 };
 
+export const reactions = {
+  title: bi("AI Reactions", "AI 반응"),
+  subtitle: bi(
+    "One request, two species — see how AI treats each.",
+    "한 요청, 두 종 — AI가 각각을 어떻게 대하는지 보세요."
+  ),
+  guardrail: bi(
+    "AI reacts to the request and the habit, not the person.",
+    "AI는 사람이 아니라 요청과 습관에 반응합니다."
+  ),
+  presetLabel: bi("Try a scenario", "시나리오를 골라 보세요"),
+  inputLabel: bi("Your request (one line)", "당신의 요청 (한 줄)"),
+  contextLabel: bi("Optional context", "선택적 맥락"),
+  contextToggle: bi("Add context", "맥락 추가"),
+  compare: bi("Compare AI reactions", "AI 반응 비교"),
+  comparing: bi("Comparing…", "비교하는 중…"),
+  opinionLabel: bi("AI opinion", "AI 의견"),
+  reactionLabel: bi("AI reaction", "AI 행동"),
+  forPromptus: bi("For a Homo Promptus request", "Homo Promptus 요청에 대해"),
+  forDelegans: bi("For a Homo Delegans request", "Homo Delegans 요청에 대해"),
+  fromPlay: bi("See how AI treats both species →", "AI가 두 종을 어떻게 대하는지 보기 →"),
+  presets: [
+    bi("Fix the bug", "버그 고쳐줘"),
+    bi("Summarize the contract", "계약서 요약해줘"),
+    bi("Plan our meeting", "회의 정리해줘"),
+    bi("Write the release notes", "릴리스 노트 써줘"),
+    bi("Review this PR", "이 PR 리뷰해줘"),
+  ],
+};
+
 export const museum = {
   title: bi("Species Museum", "Species Museum"),
   subtitle: bi(
@@ -177,6 +208,13 @@ export const settings = {
   title: bi("Settings", "설정"),
   nickname: bi("Nickname (local)", "닉네임 (로컬)"),
   defaultMode: bi("Default mode", "기본 모드"),
+  aiTitle: bi("AI provider (optional)", "AI 제공자 (선택)"),
+  aiMockOnly: bi("Use mock only (default)", "목업만 사용 (기본)"),
+  aiKeyLabel: bi("API key (stored in this browser only)", "API 키 (이 브라우저에만 저장)"),
+  aiKeyHint: bi(
+    "BYOK is not active in the static demo (CORS). Stored locally for future local/proxy use. Never sent to our servers.",
+    "정적 데모에서는 BYOK가 비활성입니다(CORS). 추후 로컬·프록시용으로 브라우저에만 저장되며, 우리 서버로 전송되지 않습니다."
+  ),
 };
 
 export const speciesLabels = {

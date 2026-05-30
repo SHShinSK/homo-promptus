@@ -7,6 +7,7 @@ import { Feed } from "@/pages/Feed";
 import { Home } from "@/pages/Home";
 import { Museum } from "@/pages/Museum";
 import { Play } from "@/pages/Play";
+import { Reactions } from "@/pages/Reactions";
 import { Scoreboard } from "@/pages/Scoreboard";
 import { Settings } from "@/pages/Settings";
 
@@ -21,6 +22,7 @@ export default function App() {
             <Route index element={<Home />} />
             <Route path="diagnosis" element={<Diagnosis />} />
             <Route path="play" element={<Play />} />
+            <Route path="reactions" element={<Reactions />} />
             <Route path="feed" element={<Feed />} />
             <Route path="museum" element={<Museum />} />
             <Route path="scoreboard" element={<Scoreboard />} />
