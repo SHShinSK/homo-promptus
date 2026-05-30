@@ -8,6 +8,8 @@
 [![License: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
 [![License: CC0-1.0](https://img.shields.io/badge/content-CC0-lightgrey.svg)](LICENSE-content)
 
+**저장소**: [github.com/SHShinSK/homo-promptus](https://github.com/SHShinSK/homo-promptus) · **데모**(Pages 배포 후): [shshinsk.github.io/homo-promptus](https://shshinsk.github.io/homo-promptus/)
+
 ## 비전
 
 AI와 에이전트가 발전하면서 인간은 점점 **시키거나 묻기만** 하는 존재가 될 수 있다는 관찰을, 비난이 아닌 **습관·UX의 풍자**로 돌아보는 플랫폼입니다.
