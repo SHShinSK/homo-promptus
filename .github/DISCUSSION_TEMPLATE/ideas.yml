@@ -3,6 +3,6 @@ labels: ["idea"]
 body:
   - type: markdown
     value: |
-      ## 아이디어
-      새 기능·밈·종(subspecies)을 제안해 주세요.
-      투표·댓글 후 ROADMAP에 반영됩니다.
+      ## Ideas / 아이디어
+      Propose features, memes, or subspecies (EN + KO welcome).
+      Good threads → ROADMAP. Starter: `docs/discussions/01-welcome-vision.md`

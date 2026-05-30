@@ -1,0 +1,8 @@
+title: "🎭 "
+labels: []
+body:
+  - type: markdown
+    value: |
+      ## Show and Tell / 공유
+      Share a **Promptus** or **Delegans** moment (EN + KO).
+      No real-name mockery. See `docs/discussions/02-museum-card-call.md` for card JSON template.

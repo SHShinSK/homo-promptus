@@ -41,7 +41,7 @@ src/               Vite + React 포털
 
 [CONTRIBUTING.md](CONTRIBUTING.md)를 읽어 주세요. 카피 한 줄, 밈 카드 JSON, i18n, UI 모드 분기 등 작은 PR을 환영합니다.
 
-- **Ideas** — [Discussions](https://github.com/SHShinSK/homo-promptus/discussions)에서 아이디어 토론
+- **Ideas** — [Discussions](https://github.com/SHShinSK/homo-promptus/discussions) (starter posts: [`docs/discussions/`](docs/discussions/))
 - **밈 카드** — `content/cards/*.json` 추가 PR
 - **풍자 카피** — `docs/copy-delegans.md` 또는 UI `src/lib/copy.ts`
 

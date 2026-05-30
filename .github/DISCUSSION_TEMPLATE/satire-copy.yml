@@ -1,0 +1,8 @@
+title: "✍️ "
+labels: []
+body:
+  - type: markdown
+    value: |
+      ## Satire & Copy / 풍자 & 카피
+      Propose or vote on UI lines (EN + KO).
+      See `docs/discussions/03-satire-copy-seed.md` for format.
