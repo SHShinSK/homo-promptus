@@ -44,6 +44,31 @@ export function Home() {
         </div>
       </section>
 
+      <section className="species-surface rounded-2xl p-6 border-2" style={{ borderColor: "var(--color-accent)" }}>
+        <Bi text={home.collaborateTitle} variant="heading" as="h2" className="mt-0 text-lg" />
+        <Bi text={home.collaborateBody} variant="block" className="text-sm mt-2 mb-4" />
+        <div className="flex flex-wrap gap-2">
+          <a
+            href="https://github.com/SHShinSK/homo-promptus/blob/main/CONTRIBUTING.md"
+            className="species-accent px-3 py-2 rounded-lg no-underline text-white text-sm font-medium"
+          >
+            <Bi text={home.contributing} variant="block" />
+          </a>
+          <a
+            href="https://github.com/SHShinSK/homo-promptus/discussions"
+            className="species-accent-outline px-3 py-2 rounded-lg no-underline text-sm font-medium"
+          >
+            <Bi text={home.discussions} variant="block" />
+          </a>
+          <a
+            href="https://github.com/SHShinSK/homo-promptus/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22"
+            className="species-accent-outline px-3 py-2 rounded-lg no-underline text-sm font-medium"
+          >
+            <Bi text={home.goodFirstIssues} variant="block" />
+          </a>
+        </div>
+      </section>
+
       <section className="grid md:grid-cols-2 gap-4">
         <div className="species-surface rounded-xl p-6">
           <h2 className="mt-0 text-teal-700 dark:text-teal-300">Homo Promptus</h2>

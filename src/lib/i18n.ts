@@ -70,6 +70,14 @@ export const home = {
   takeDiagnosis: bi("Take species diagnosis", "종 진단 받기"),
   tryPlay: bi("Try", "체험"),
   discussGithub: bi("Discuss & contribute on GitHub", "GitHub에서 토론·기여하기"),
+  collaborateTitle: bi("Open for collaboration", "협업을 환영합니다"),
+  collaborateBody: bi(
+    "PRs welcome: Museum cards, satire copy (EN+KO), small fixes. No permission needed.",
+    "PR 환영: Museum 카드, 풍자 카피(영·한), 작은 수정. 허락 없이 시작해도 됩니다."
+  ),
+  contributing: bi("Contributing guide", "기여 가이드"),
+  discussions: bi("Discussions", "토론"),
+  goodFirstIssues: bi("Good first issues", "첫 PR 이슈"),
 };
 
 export const diagnosis = {

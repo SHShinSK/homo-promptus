@@ -1,6 +1,10 @@
-# 기여 가이드
+# 기여 가이드 / Contributing
 
-감사합니다. 작은 PR이 가장 환영됩니다.
+**We welcome collaboration — small PRs are the best PRs.**  
+**협업을 환영합니다 — 작은 PR이 가장 좋습니다.**
+
+- [Good first issues](https://github.com/SHShinSK/homo-promptus/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
+- [Discussions](https://github.com/SHShinSK/homo-promptus/discussions) · [Welcome #1](https://github.com/SHShinSK/homo-promptus/discussions/1)
 
 ## 시작하기
 
