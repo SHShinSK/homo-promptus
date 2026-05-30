@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Pretendard", "Segoe UI", system-ui, sans-serif;
+}
+
+/* Homo Promptus — 차분·문서형 */
+[data-species="promptus"] {
+  --color-bg: #f8fafc;
+  --color-surface: #ffffff;
+  --color-text: #0f172a;
+  --color-muted: #64748b;
+  --color-accent: #0d9488;
+  --color-accent-soft: #ccfbf1;
+  --color-border: #e2e8f0;
+}
+
+/* Homo Delegans — 과장·패러디 */
+[data-species="delegans"] {
+  --color-bg: #1a0a2e;
+  --color-surface: #2d1b4e;
+  --color-text: #faf5ff;
+  --color-muted: #c4b5fd;
+  --color-accent: #f472b6;
+  --color-accent-soft: #4c1d95;
+  --color-border: #6b21a8;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: var(--color-bg);
+  color: var(--color-text);
+  min-height: 100dvh;
+}
+
+.species-bg {
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+.species-surface {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+}
+
+.species-accent {
+  background: var(--color-accent);
+  color: white;
+}
+
+.species-accent-outline {
+  border: 2px solid var(--color-accent);
+  color: var(--color-accent);
+}
+
+.species-muted {
+  color: var(--color-muted);
+}

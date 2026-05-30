@@ -1,0 +1,19 @@
+name: 버그
+description: UI·빌드·배포 문제
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: steps
+    attributes:
+      label: 재현 단계
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: 모드
+      options:
+        - promptus
+        - delegans
+        - both

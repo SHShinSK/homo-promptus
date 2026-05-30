@@ -1,0 +1,10 @@
+{
+  "id": "003-auto-context",
+  "species": "delegans",
+  "title": "Auto Context™",
+  "body": "파일을 첨부하지 않았다. '프로젝트 알아서 파악해'라고만 썼다. 로딩 바가 47초 돌았고, 그게 맥락이었다.",
+  "tags": ["ui", "agent"],
+  "locale": "ko",
+  "author": "seed",
+  "created": "2026-05-30"
+}

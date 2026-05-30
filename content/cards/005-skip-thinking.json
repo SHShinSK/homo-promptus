@@ -1,0 +1,10 @@
+{
+  "id": "005-skip-thinking",
+  "species": "delegans",
+  "title": "Skip Thinking",
+  "body": "회의 안건을 AI에게 '요약+결정+후속 태스크'로 한 번에 시켰다. 참석자는 채팅창만 봤다.",
+  "tags": ["work", "meeting"],
+  "locale": "ko",
+  "author": "seed",
+  "created": "2026-05-30"
+}

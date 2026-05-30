@@ -1,0 +1,26 @@
+name: Museum 카드
+description: content/cards JSON 기여 (PR 전 이슈로 논의 가능)
+title: "[Card] "
+labels: ["satire", "good first issue"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: 카드 제목
+    validations:
+      required: true
+  - type: dropdown
+    id: species
+    attributes:
+      label: 종
+      options:
+        - promptus
+        - delegans
+    validations:
+      required: true
+  - type: textarea
+    id: body
+    attributes:
+      label: 본문 초안
+    validations:
+      required: true

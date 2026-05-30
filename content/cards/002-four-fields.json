@@ -1,0 +1,10 @@
+{
+  "id": "002-four-fields",
+  "species": "promptus",
+  "title": "네 칸이면 충분",
+  "body": "목적·맥락·제약·검증 질문을 채운 뒤에야 '알아서 해줘'를 눌렀다. AI도 맥락이 필요하다는 걸 안다.",
+  "tags": ["prompt", "work"],
+  "locale": "ko",
+  "author": "seed",
+  "created": "2026-05-30"
+}

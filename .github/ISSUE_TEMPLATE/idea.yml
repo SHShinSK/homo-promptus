@@ -1,0 +1,27 @@
+name: 아이디어
+description: 기능·밈·종(subspecies) 제안
+title: "[Idea] "
+labels: ["idea"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: 요약
+      description: 무엇을 제안하나요?
+    validations:
+      required: true
+  - type: dropdown
+    id: species
+    attributes:
+      label: 관련 종
+      options:
+        - promptus
+        - delegans
+        - both
+    validations:
+      required: true
+  - type: textarea
+    id: satire
+    attributes:
+      label: 풍자 톤 메모
+      description: 습관·UX 풍자인지, 피해야 할 프레이밍은?
