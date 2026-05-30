@@ -1,10 +1,13 @@
 {
   "id": "001-already-fixed",
   "species": "delegans",
-  "title": "이미 고쳐졌겠지",
-  "body": "에이전트에게 '버그 고쳐줘'만 보냈다. PR은 열었지만 diff는 읽지 않았다. 머지 버튼만 눌렀다.",
+  "title": { "en": "Surely fixed already", "ko": "이미 고쳐졌겠지" },
+  "body": {
+    "en": "Sent only 'fix the bug' to the agent. Opened the PR but never read the diff. Hit merge.",
+    "ko": "에이전트에게 '버그 고쳐줘'만 보냈다. PR은 열었지만 diff는 읽지 않았다. 머지 버튼만 눌렀다."
+  },
   "tags": ["dev", "agent"],
-  "locale": "ko",
+  "locale": "en",
   "author": "seed",
   "created": "2026-05-30"
 }

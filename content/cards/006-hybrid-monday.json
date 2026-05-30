@@ -1,10 +1,13 @@
 {
   "id": "006-hybrid-monday",
   "species": "promptus",
-  "title": "월요일은 Promptus",
-  "body": "월요일 오전엔 맥락을 꼼꼼히 썼다. 금요일 오후엔 '그냥 해줘'였다. 종 진단은 hybrid.",
+  "title": { "en": "Promptus on Monday", "ko": "월요일은 Promptus" },
+  "body": {
+    "en": "Monday morning: careful context. Friday afternoon: 'just handle it'. Diagnosis: hybrid.",
+    "ko": "월요일 오전엔 맥락을 꼼꼼히 썼다. 금요일 오후엔 '그냥 해줘'였다. 종 진단은 hybrid."
+  },
   "tags": ["hybrid", "work"],
-  "locale": "ko",
+  "locale": "en",
   "author": "seed",
   "created": "2026-05-30"
 }

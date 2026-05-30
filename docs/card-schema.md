@@ -6,23 +6,26 @@
 {
   "id": "001-example",
   "species": "delegans",
-  "title": "카드 제목",
-  "body": "짧은 설명 또는 가상 대화",
+  "title": { "en": "Card title", "ko": "카드 제목" },
+  "body": {
+    "en": "Short description or fictional dialogue",
+    "ko": "짧은 설명 또는 가상 대화"
+  },
   "tags": ["work", "agent"],
-  "locale": "ko",
+  "locale": "en",
   "author": "community",
   "created": "2026-05-30"
 }
 ```
 
-| 필드 | 필수 | 설명 |
-|------|------|------|
-| `id` | ✓ | 고유 ID (파일명과 일치 권장) |
+| Field | Required | Description |
+|-------|----------|-------------|
+| `id` | ✓ | Unique ID (match filename) |
 | `species` | ✓ | `promptus` \| `delegans` |
-| `title` | ✓ | 제목 |
-| `body` | ✓ | 본문 (마크다운 불가, plain text) |
-| `tags` | | 문자열 배열 |
-| `locale` | | `ko` \| `en` |
+| `title` | ✓ | `{ "en", "ko" }` — English primary, Korean parallel |
+| `body` | ✓ | `{ "en", "ko" }` plain text |
+| `tags` | | string array |
+| `locale` | | default locale for PR (`en` recommended) |
 | `author` | | 기여자 표시 |
 | `created` | | ISO 날짜 |
 

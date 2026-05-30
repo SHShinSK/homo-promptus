@@ -1,10 +1,13 @@
 {
   "id": "004-verified-myself",
   "species": "promptus",
-  "title": "직접 verified",
-  "body": "AI 답변에 '불확실' 라벨이 붙어 있었다. 출처 링크 두 개를 열어보고, 틀린 부분을 직접 수정했다.",
+  "title": { "en": "Verified myself", "ko": "직접 verified" },
+  "body": {
+    "en": "The AI answer had an 'uncertain' label. Opened two source links and fixed what was wrong.",
+    "ko": "AI 답변에 '불확실' 라벨이 붙어 있었다. 출처 링크 두 개를 열어보고, 틀린 부분을 직접 수정했다."
+  },
   "tags": ["research"],
-  "locale": "ko",
+  "locale": "en",
   "author": "seed",
   "created": "2026-05-30"
 }

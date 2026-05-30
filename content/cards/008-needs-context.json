@@ -1,10 +1,13 @@
 {
   "id": "008-needs-context",
   "species": "promptus",
-  "title": "needs-context",
-  "body": "동료 Delegans 포스트에 '어떤 스택인지, 재현 단계는?'라고 답했다. 반대 종 UI로 답하니 카피가 바뀌었다.",
+  "title": { "en": "needs-context", "ko": "needs-context" },
+  "body": {
+    "en": "Replied to a Delegans post: 'Which stack? What are the repro steps?' UI switched to the other species.",
+    "ko": "동료 Delegans 포스트에 '어떤 스택인지, 재현 단계는?'라고 답했다. 반대 종 UI로 답하니 카피가 바뀌었다."
+  },
   "tags": ["community"],
-  "locale": "ko",
+  "locale": "en",
   "author": "seed",
   "created": "2026-05-30"
 }

@@ -1,6 +1,6 @@
 # Homo Promptus
 
-**AI 시대 인간의 두 종(種)** — 조금 생각하는 *Homo Promptus*와 생각까지 맡기는 *Homo Delegans*를 한 포털에서 체험하는 가벼운 풍자 오픈소스 프로젝트입니다.
+**Two species of humans in the AI age (AI 시대 인간의 두 종)** — a gentle satire OSS portal for *Homo Promptus* and *Homo Delegans*. **UI: English primary + Korean parallel** on all copy.
 
 > *Think a little, or think for me.*  
 > *조금 생각할까, 생각까지 맡길까.*

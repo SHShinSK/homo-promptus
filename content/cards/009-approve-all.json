@@ -1,10 +1,13 @@
 {
   "id": "009-approve-all",
   "species": "delegans",
-  "title": "Approve All",
-  "body": "에이전트가 12개 파일을 수정했다. 'Approve All' 한 번. 테스트는 CI가 알아서 하겠지.",
+  "title": { "en": "Approve All", "ko": "Approve All" },
+  "body": {
+    "en": "Agent changed 12 files. One 'Approve All'. Tests? CI will handle it.",
+    "ko": "에이전트가 12개 파일을 수정했다. 'Approve All' 한 번. 테스트는 CI가 알아서 하겠지."
+  },
   "tags": ["dev", "ci"],
-  "locale": "ko",
+  "locale": "en",
   "author": "seed",
   "created": "2026-05-30"
 }

@@ -1,7 +1,16 @@
 import { useState } from "react";
+import { Bi } from "@/components/Bi";
 import { useCopy, useSpecies } from "@/context/SpeciesContext";
+import { play as p } from "@/lib/i18n";
 import { mockRespond } from "@/lib/mockAi";
 import { recordAction } from "@/lib/storage";
+
+const promptFields = [
+  { key: "purpose" as const, label: p.fields.purpose },
+  { key: "context" as const, label: p.fields.context },
+  { key: "constraint" as const, label: p.fields.constraint },
+  { key: "verify" as const, label: p.fields.verify },
+];
 
 export function Play() {
   const { species } = useSpecies();
@@ -13,6 +22,14 @@ export function Play() {
   const [constraint, setConstraint] = useState("");
   const [verify, setVerify] = useState("");
   const [oneLiner, setOneLiner] = useState("");
+
+  const values = { purpose, context, constraint, verify };
+  const setters = {
+    purpose: setPurpose,
+    context: setContext,
+    constraint: setConstraint,
+    verify: setVerify,
+  };
 
   async function run() {
     setLoading(true);
@@ -33,33 +50,25 @@ export function Play() {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="m-0">{c.playTitle}</h1>
-        <p className="species-muted m-0">{c.playSubtitle}</p>
+        <h1 className="m-0">{c.playTitle.en}</h1>
+        <p className="text-sm species-muted m-0">{c.playTitle.ko}</p>
+        <Bi text={c.playSubtitle} variant="block" className="species-muted mt-1" />
       </div>
 
       {species === "promptus" ? (
         <div className="species-surface rounded-xl p-6 grid gap-4">
-          {(
-            [
-              ["목적", purpose, setPurpose],
-              ["맥락", context, setContext],
-              ["제약", constraint, setConstraint],
-              ["검증 질문", verify, setVerify],
-            ] as const
-          ).map(([label, val, set]) => (
-            <label key={label} className="block">
-              <span className="text-sm font-medium">{label}</span>
+          {promptFields.map(({ key, label }) => (
+            <label key={key} className="block">
+              <Bi text={label} variant="label" />
               <textarea
                 className="mt-1 w-full rounded-lg border p-2 min-h-[72px] bg-white text-slate-900"
-                value={val}
-                onChange={(e) => set(e.target.value)}
-                placeholder={`${label}을 입력하세요`}
+                value={values[key]}
+                onChange={(e) => setters[key](e.target.value)}
+                placeholder={`${p.placeholder.en} ${label.en} / ${p.placeholder.ko} ${label.ko}`}
               />
             </label>
           ))}
-          <p className="text-xs species-muted m-0">
-            생각 체크리스트: 의도가 한 문장인가요? 검증 방법이 있나요?
-          </p>
+          <Bi text={p.checklist} variant="block" className="text-xs species-muted" />
         </div>
       ) : (
         <div className="species-surface rounded-xl p-6 space-y-4">
@@ -67,7 +76,7 @@ export function Play() {
             className="w-full text-xl p-4 rounded-xl border-2 border-fuchsia-500 bg-purple-950 text-white"
             value={oneLiner}
             onChange={(e) => setOneLiner(e.target.value)}
-            placeholder="알아서 해줘"
+            placeholder={`${p.delegatePlaceholder.en} / ${p.delegatePlaceholder.ko}`}
           />
           <div className="flex flex-wrap gap-2">
             {["Auto Context™", "Skip Thinking", "Approve All"].map((btn) => (
@@ -92,12 +101,20 @@ export function Play() {
           species === "delegans" ? "bg-fuchsia-500 text-white" : "species-accent"
         }`}
       >
-        {loading ? c.loading : c.submit}
+        {loading ? (
+          <Bi text={c.loading} variant="block" />
+        ) : (
+          <Bi text={c.submit} variant="block" />
+        )}
       </button>
 
       {output && (
         <pre className="species-surface rounded-xl p-4 whitespace-pre-wrap text-sm m-0">
-          <strong>{c.resultTitle}</strong>
+          <strong>
+            {c.resultTitle.en}
+            {"\n"}
+            {c.resultTitle.ko}
+          </strong>
           {"\n\n"}
           {output}
         </pre>

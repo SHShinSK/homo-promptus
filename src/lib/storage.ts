@@ -1,3 +1,4 @@
+import { common } from "./i18n";
 import type { BehaviorLog, DiagnosisResult, Species } from "./types";
 
 const KEYS = {
@@ -36,11 +37,14 @@ export function setTrackingOptIn(on: boolean): void {
 }
 
 export function getNickname(): string {
-  return localStorage.getItem(KEYS.nickname) || "익명 종";
+  return localStorage.getItem(KEYS.nickname) || common.anonymousSpecies.en;
 }
 
 export function setNickname(n: string): void {
-  localStorage.setItem(KEYS.nickname, n.trim() || "익명 종");
+  localStorage.setItem(
+    KEYS.nickname,
+    n.trim() || common.anonymousSpecies.en
+  );
 }
 
 export function getBehaviorLog(): BehaviorLog {

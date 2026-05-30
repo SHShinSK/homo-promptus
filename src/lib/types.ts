@@ -1,11 +1,13 @@
+import type { Bi } from "./i18n";
+
 export type Species = "promptus" | "delegans";
 export type DiagnosisResult = Species | "hybrid";
 
 export interface MuseumCard {
   id: string;
   species: Species;
-  title: string;
-  body: string;
+  title: Bi;
+  body: Bi;
   tags?: string[];
   locale?: string;
   author?: string;
@@ -15,9 +17,9 @@ export interface MuseumCard {
 export interface FeedPost {
   id: string;
   species: Species;
-  author: string;
-  title: string;
-  body: string;
+  author: Bi;
+  title: Bi;
+  body: Bi;
   reactions: string[];
 }
 

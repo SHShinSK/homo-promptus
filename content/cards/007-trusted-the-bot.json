@@ -1,10 +1,13 @@
 {
   "id": "007-trusted-the-bot",
   "species": "delegans",
-  "title": "trusted-the-bot",
-  "body": "법률 검토 문서를 AI가 써줬다. '법률 자문 아님' 문구는 접혀 있었다. 보내기 전에 열지 않았다.",
+  "title": { "en": "trusted-the-bot", "ko": "trusted-the-bot" },
+  "body": {
+    "en": "AI drafted the legal review. 'Not legal advice' was collapsed. Sent without opening.",
+    "ko": "법률 검토 문서를 AI가 써줬다. '법률 자문 아님' 문구는 접혀 있었다. 보내기 전에 열지 않았다."
+  },
   "tags": ["legal", "risk"],
-  "locale": "ko",
+  "locale": "en",
   "author": "seed",
   "created": "2026-05-30"
 }

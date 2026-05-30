@@ -1,10 +1,13 @@
 {
   "id": "010-didnt-read",
   "species": "delegans",
-  "title": "didnt-read",
-  "body": "200페이지 PDF를 AI에게 '핵심만' 시켰다. 요약은 읽었다. 원문은 didnt-read.",
+  "title": { "en": "didnt-read", "ko": "didnt-read" },
+  "body": {
+    "en": "Asked AI to summarize a 200-page PDF. Read the summary. Original: didnt-read.",
+    "ko": "200페이지 PDF를 AI에게 '핵심만' 시켰다. 요약은 읽었다. 원문은 didnt-read."
+  },
   "tags": ["research", "pdf"],
-  "locale": "ko",
+  "locale": "en",
   "author": "seed",
   "created": "2026-05-30"
 }

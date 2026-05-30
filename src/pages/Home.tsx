@@ -1,25 +1,31 @@
 import { Link } from "react-router-dom";
-import { useCopy, useSpecies } from "@/context/SpeciesContext";
+import { Bi } from "@/components/Bi";
 import { SpeciesBadge } from "@/components/SpeciesBadge";
+import { useCopy, useSpecies } from "@/context/SpeciesContext";
+import { common, copy, home } from "@/lib/i18n";
 
 export function Home() {
-  const { species, diagnosis } = useSpecies();
+  const { diagnosis } = useSpecies();
   const c = useCopy();
 
   return (
     <div className="space-y-8">
       <section className="species-surface rounded-2xl p-8">
-        <p className="text-sm species-muted mb-2">AI 시대 인간의 두 종</p>
-        <h1 className="text-3xl font-bold m-0 mb-2">
-          {species === "promptus" ? "Homo Promptus" : "Homo Delegans"}
-        </h1>
-        <p className="text-lg species-muted m-0 mb-4">{c.tagline}</p>
+        <p className="text-sm species-muted mb-2">
+          <Bi text={common.siteTitle} variant="block" />
+        </p>
+        <h1 className="text-3xl font-bold m-0 mb-2">{c.modeLabel.en}</h1>
+        <p className="text-sm species-muted m-0 mb-2">{c.modeLabel.ko}</p>
+        <p className="text-lg m-0 mb-1">
+          <Bi text={c.tagline} variant="block" />
+        </p>
         <p className="m-0 mb-6 italic">
-          Think a little, or think for me. — 조금 생각할까, 생각까지 맡길까.
+          <Bi text={common.slogan} variant="block" />
         </p>
         {diagnosis && (
-          <p className="mb-4">
-            당신의 진단: <SpeciesBadge species={diagnosis} />
+          <p className="mb-4 flex flex-wrap items-center gap-2">
+            <Bi text={common.diagnosisLabel} variant="inline" />
+            <SpeciesBadge species={diagnosis} />
           </p>
         )}
         <div className="flex flex-wrap gap-3">
@@ -27,13 +33,13 @@ export function Home() {
             to="/diagnosis"
             className="species-accent px-4 py-2 rounded-lg no-underline text-white font-medium"
           >
-            종 진단 받기
+            <Bi text={home.takeDiagnosis} variant="block" className="text-white" />
           </Link>
           <Link
             to="/play"
             className="species-accent-outline px-4 py-2 rounded-lg no-underline font-medium"
           >
-            {c.playTitle} 체험
+            {home.tryPlay.en} {c.playTitle.en} · {home.tryPlay.ko} {c.playTitle.ko}
           </Link>
         </div>
       </section>
@@ -41,25 +47,21 @@ export function Home() {
       <section className="grid md:grid-cols-2 gap-4">
         <div className="species-surface rounded-xl p-6">
           <h2 className="mt-0 text-teal-700 dark:text-teal-300">Homo Promptus</h2>
-          <p className="species-muted text-sm m-0">
-            프롬프트에 의도·맥락·검증을 남기는 종. Prompt Lab에서 네 칸을 채워 보세요.
-          </p>
+          <Bi text={copy.promptus.desc} variant="block" className="text-sm species-muted" />
         </div>
         <div className="species-surface rounded-xl p-6">
           <h2 className="mt-0 text-fuchsia-400">Homo Delegans</h2>
-          <p className="species-muted text-sm m-0">
-            시키거나 묻기만 하는 종. Delegate Dock에서 한 줄로 위임해 보세요.
-          </p>
+          <Bi text={copy.delegans.desc} variant="block" className="text-sm species-muted" />
         </div>
       </section>
 
-      <p className="text-center text-sm species-muted">
+      <p className="text-center text-sm">
         <a
           href="https://github.com/SHShinSK/homo-promptus"
           className="underline"
           style={{ color: "var(--color-accent)" }}
         >
-          GitHub에서 토론·기여하기
+          <Bi text={home.discussGithub} variant="block" />
         </a>
       </p>
     </div>
